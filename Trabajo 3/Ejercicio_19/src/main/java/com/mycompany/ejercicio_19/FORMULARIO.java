@@ -118,14 +118,11 @@ public class FORMULARIO extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        double lado, altura,area,perimetro;
-        lado = Double.parseDouble(txtLado.getText());
-        altura = (lado*Math.sqrt(3))/2;
-        area = (Math.pow(lado,2)*Math.sqrt(3))/4;
-        perimetro = 3*lado;
-        txtAltura.setText(String.valueOf(altura));
-        txtArea.setText(String.valueOf(area));
-        txtPerimetro.setText(String.valueOf(perimetro));
+        double lado = Double.parseDouble(txtLado.getText());
+        Equilatero triangulo = new Equilatero(lado);
+        txtArea.setText(String.valueOf(triangulo.area));
+        txtPerimetro.setText(String.valueOf(triangulo.perimetro));
+        txtAltura.setText(String.valueOf(triangulo.altura));
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 

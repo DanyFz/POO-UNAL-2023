@@ -19,7 +19,7 @@ public class Empleado {
         this.s_hora = s_hora;        
     } 
     public String salarioo(){
-        salario = horas*s_hora;
+        double salario = horas*s_hora;
         String hola = System.getProperty("line.separator");
         if(salario<450000){
            return nombre;    

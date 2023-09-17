@@ -13,14 +13,21 @@ public class Empleado {
     public double s_hora;
     public double horas;
     public double salario;
-    public Empleado(double s_hora, double horas) {
+    public Empleado(double s_hora, double horas, String nombre) {
         this.nombre = nombre;
         this.horas = horas;
-        this.s_hora = s_hora;
-        this.salario = horas*s_hora;
-    }  
-}    
-  
+        this.s_hora = s_hora;        
+    } 
+    public String salarioo(){
+        salario = horas*s_hora;
+        String hola = System.getProperty("line.separator");
+        if(salario<450000){
+           return nombre;    
+        }else{
+            return String.valueOf(salario)+hola + nombre;
+        }   
+    }
+}
     
 
 

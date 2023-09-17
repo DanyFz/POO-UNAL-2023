@@ -54,8 +54,18 @@ public class FORMULARIO extends javax.swing.JFrame {
         });
 
         btnBorrar.setText("Salir");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
 
         btnSalir.setText("Borrar");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Lado");
 
@@ -125,6 +135,17 @@ public class FORMULARIO extends javax.swing.JFrame {
         txtAltura.setText(String.valueOf(triangulo.altura));
         
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        txtArea.setText("");
+        txtPerimetro.setText("");
+        txtAltura.setText("");
+        txtLado.setText("");
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnBorrarActionPerformed
 
     /**
      * @param args the command line arguments

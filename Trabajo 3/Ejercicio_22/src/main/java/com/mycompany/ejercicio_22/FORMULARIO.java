@@ -48,8 +48,18 @@ public class FORMULARIO extends javax.swing.JFrame {
         });
 
         btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Nombre");
 
@@ -70,7 +80,7 @@ public class FORMULARIO extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jLabel3))
-                        .addGap(77, 77, 77)
+                        .addGap(98, 98, 98)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtShora)
                             .addComponent(txtHoras)))
@@ -127,6 +137,18 @@ public class FORMULARIO extends javax.swing.JFrame {
         Empleado empleado = new Empleado(s_horas, horas, nombre);
         txtSalario.setText(String.valueOf(empleado.salarioo()));
     }//GEN-LAST:event_btnCalcularActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+    txtHoras.setText("");
+    txtNombre.setText("");
+    txtSalario.setText("");
+    txtShora.setText("");
+    
+    }//GEN-LAST:event_btnBorrarActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+    System.exit(0);      
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments

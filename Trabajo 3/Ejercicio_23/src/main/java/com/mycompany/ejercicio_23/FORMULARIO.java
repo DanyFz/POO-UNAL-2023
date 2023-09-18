@@ -47,8 +47,18 @@ public class FORMULARIO extends javax.swing.JFrame {
         });
 
         btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("A");
 
@@ -124,6 +134,18 @@ public class FORMULARIO extends javax.swing.JFrame {
     private void txtX_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtX_1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtX_1ActionPerformed
+
+    private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
+
+        txtB.setText("");
+        txtA.setText("");
+        txtC.setText("");
+        txtX_1.setText("");
+    }//GEN-LAST:event_btnBorrarActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments

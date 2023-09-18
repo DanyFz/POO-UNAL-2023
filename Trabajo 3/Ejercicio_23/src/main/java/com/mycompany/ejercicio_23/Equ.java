@@ -35,7 +35,7 @@ public class Equ {
         } else {
             double x1 = (-b + Math.sqrt(k))/(2*a);
             double x2 = (-b - Math.sqrt(k))/(2*a);
-            return "Las soluciones son " + x1 + "y " + x2 ;
+            return "Las soluciones son " + x1 + " y " + x2 ;
             
         }
     }

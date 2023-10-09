@@ -5,3 +5,8 @@ git add .
 git commit -m "Mensaje"
 
 git push -u origin main 
+
+para actualizar el local 
+
+git fetch
+git merge 

@@ -45,11 +45,25 @@ public class Bucles {
         /// Do-While
         //Do{codigo}while(condicion); aunque la condicion sea falsa el codigo se ejecuta al menos una vez
         // ejercicio para encontrar el peso ideal 
-        String genero = "";
+        /*String genero = "";
         
         do{
             genero = JOptionPane.showInputDialog("Introduzca su genero (H/M)");
-        }while(genero.equalsIgnoreCase("H")==false && genero.equalsIgnoreCase("M"));
-    }
-    
+        }while(genero.equalsIgnoreCase("H")==false && genero.equalsIgnoreCase("M"));*/
+        ///Ejemplo de do while
+        //----------------------------------------------------------------------------------------------------------------------------------------------------------
+        ///Bucle for; derminado sabemos cuantas veces se va a repetir 
+        ///for(inicio bucle; condicion; contador del bucle){codigo}
+        /*for (int i=0; i<2;i++){
+            System.out.println("Hola");*/
+        ///Ejemplo de for 
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        /// for-each
+        /*int resultado = 1;
+        int numero=Integer.parseInt(JOptionPane.showInputDialog("introduce el numero"));
+        for(int r=numero; r>0; r--) {
+            resultado=resultado*r;
+        }   
+        System.out.println("El factorial es "+ resultado);*/
+     }
 }

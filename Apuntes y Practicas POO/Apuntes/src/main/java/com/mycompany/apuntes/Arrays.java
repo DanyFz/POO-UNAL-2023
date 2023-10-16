@@ -3,7 +3,7 @@ package com.mycompany.apuntes;
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //Una matriz es una estructura de datos con valores del mismo tipo
  // Declaracion int[] matriz = new int[10]; ejemplo de matriz int es el tipo de dato y 10 el numero de datos
-
+//el tipo de dato de la array puede ser un objeto
 public class Arrays{
     public static void main(String[] args){
         /*int[] matriz = new int[5];

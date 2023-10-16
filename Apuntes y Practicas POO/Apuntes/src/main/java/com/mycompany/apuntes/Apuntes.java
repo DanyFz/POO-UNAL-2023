@@ -1,6 +1,6 @@
 
 package com.mycompany.apuntes;
-//java distingue netre mayusculas
+//java distingue entre mayusculas
 //el public o private son los modificadores de acceso
 //las clases y los metodos siempre van con {}, las sentencias terminan en ;
 //enteros= int;entreros pequenos= short; enteros gigantes= long;

@@ -39,7 +39,7 @@ public class Poo {
         this(atributo, 32.5);
         //este segundo constructor recibe menos cosas pero llama al primero y define lo anterior
     }
-    public int atrubuto(){
+    public int atributo(){
         return atributo; //este metodo getter me devuelve el valor del atributo
     }
     public static void main(String[] args){
